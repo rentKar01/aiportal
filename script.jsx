@@ -19,6 +19,7 @@
     .status-dot.green { background-color: #00FFC6; }
     .status-dot.blue { background-color: #00ADB5; }
     .status-dot.red { background-color: #FF4C4C; }
+    .hidden { display: none; }
   </style>
 </head>
 <body class="bg-black text-white min-h-screen flex flex-col items-center justify-center">
@@ -37,7 +38,7 @@
           <img src="https://via.placeholder.com/50" alt="Employee Avatar" class="rounded-full mr-4">
           <div>
             <h3 class="text-lg font-semibold">John Doe</h3>
-            <p class="text-sm text-muted">Skill Points: <span class="highlight-blue">150</span></p>
+            <p class="text-sm text-muted">Skill Points: <span id="skill-points" class="highlight-blue">150</span></p>
             <p class="text-sm text-muted">Salary Increase: <span class="highlight-teal">₹10,000</span></p>
             <p class="text-sm text-muted">Job: Product Manager</p>
           </div>
@@ -45,43 +46,47 @@
       </div>
     </div>
 
-    <!-- Brainstorm Session with AI Search (Bento Grid) -->
+    <!-- Toggleable Brainstorm Session -->
     <div class="bg-dark-gray p-6 rounded-lg shadow-lg col-span-1 sm:col-span-2 lg:col-span-3">
-      <h2 class="text-2xl font-semibold text-highlight-teal mb-4">Brainstorm Session 💡</h2>
-      <p class="text-muted mb-4">"Use this section to brainstorm new ideas for Rentkar and get AI-powered suggestions to enhance productivity."</p>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <div class="p-4 bg-gray-900 rounded">
-          <label class="block mb-2 text-sm font-semibold text-white">New Idea:</label>
-          <input id="brainstorm-input" type="text" placeholder="Your idea..." class="w-full p-3 bg-gray-800 text-white rounded focus:outline-none focus:ring-2 focus:ring-highlight-teal mb-2">
-          <button onclick="submitBrainstorm()" class="bg-highlight-blue hover:bg-highlight-teal text-white py-2 px-4 rounded transition-colors duration-200">Submit</button>
-        </div>
-        <div id="ai-response" class="p-4 bg-gray-900 rounded hidden">
-          <h3 class="text-lg font-semibold mb-2 text-highlight-blue">AI Response:</h3>
-          <p id="ai-answer" class="text-gray-300 mb-4"></p>
-          <button onclick="addBrainstormToTasks()" class="bg-highlight-teal hover:bg-highlight-blue text-white py-2 px-4 rounded transition-colors duration-200">Add to To-Do List</button>
+      <button onclick="toggleSection('brainstorm-section')" class="bg-highlight-blue text-white py-2 px-4 rounded mb-4 w-full text-left">Brainstorm Session 💡</button>
+      <div id="brainstorm-section" class="hidden">
+        <p class="text-muted mb-4">"Use this section to brainstorm new ideas for Rentkar and get AI-powered suggestions to enhance productivity."</p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div class="p-4 bg-gray-900 rounded">
+            <label class="block mb-2 text-sm font-semibold text-white">New Idea:</label>
+            <input id="brainstorm-input" type="text" placeholder="Your idea..." class="w-full p-3 bg-gray-800 text-white rounded focus:outline-none focus:ring-2 focus:ring-highlight-teal mb-2">
+            <button onclick="submitBrainstorm()" class="bg-highlight-blue hover:bg-highlight-teal text-white py-2 px-4 rounded transition-colors duration-200">Submit</button>
+          </div>
+          <div id="ai-response" class="p-4 bg-gray-900 rounded hidden">
+            <h3 class="text-lg font-semibold mb-2 text-highlight-blue">AI Response:</h3>
+            <p id="ai-answer" class="text-gray-300 mb-4"></p>
+            <button onclick="addBrainstormToTasks()" class="bg-highlight-teal hover:bg-highlight-blue text-white py-2 px-4 rounded transition-colors duration-200">Add to To-Do List</button>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Upskill Section with Horizontal Banner -->
+    <!-- Toggleable Upskill Section -->
     <div class="bg-dark-gray p-6 rounded-lg shadow-lg col-span-1 sm:col-span-2 lg:col-span-3">
-      <h2 class="text-2xl font-semibold text-highlight-teal mb-4">Upskill 📈</h2>
-      <p class="text-muted mb-4">"Continue your growth with these curated learning videos. Click to track your progress."</p>
-      <div class="flex overflow-x-auto space-x-4">
-        <div class="p-4 bg-gray-800 rounded w-72 min-w-max">
-          <img src="https://img.youtube.com/vi/ckNEdxQ0Tc0/0.jpg" alt="Video Thumbnail" class="mb-2 rounded">
-          <h3 class="text-lg font-semibold mb-2 text-white">Video 1: Learning Performance Marketing</h3>
-          <a href="https://www.youtube.com/watch?v=ckNEdxQ0Tc0" target="_blank" class="text-highlight-blue underline">Watch Video</a>
-          <div class="completion-bar mt-2 bg-gray-600 h-1">
-            <div class="bg-highlight-teal h-1" style="width: 0;" onclick="markComplete(this)"></div>
+      <button onclick="toggleSection('upskill-section')" class="bg-highlight-teal text-white py-2 px-4 rounded mb-4 w-full text-left">Upskill 📈</button>
+      <div id="upskill-section" class="hidden">
+        <p class="text-muted mb-4">"Continue your growth with these curated learning videos. Click to track your progress and earn points."</p>
+        <div class="flex overflow-x-auto space-x-4">
+          <div class="p-4 bg-gray-800 rounded w-72 min-w-max">
+            <img src="https://img.youtube.com/vi/ckNEdxQ0Tc0/0.jpg" alt="Video Thumbnail" class="mb-2 rounded">
+            <h3 class="text-lg font-semibold mb-2 text-white">Video 1: Learning Performance Marketing</h3>
+            <a href="https://www.youtube.com/watch?v=ckNEdxQ0Tc0" target="_blank" class="text-highlight-blue underline">Watch Video</a>
+            <div class="completion-bar mt-2 bg-gray-600 h-1">
+              <div class="bg-highlight-teal h-1" style="width: 0;" onclick="markComplete(this)"></div>
+            </div>
           </div>
-        </div>
-        <div class="p-4 bg-gray-800 rounded w-72 min-w-max">
-          <img src="https://img.youtube.com/vi/ckNEdxQ0Tc0/0.jpg" alt="Video Thumbnail" class="mb-2 rounded">
-          <h3 class="text-lg font-semibold mb-2 text-white">Video 2: Exploring Design Patterns</h3>
-          <a href="https://www.youtube.com/watch?v=ckNEdxQ0Tc0" target="_blank" class="text-highlight-blue underline">Watch Video</a>
-          <div class="completion-bar mt-2 bg-gray-600 h-1">
-            <div class="bg-highlight-teal h-1" style="width: 0;" onclick="markComplete(this)"></div>
+          <div class="p-4 bg-gray-800 rounded w-72 min-w-max">
+            <img src="https://img.youtube.com/vi/ckNEdxQ0Tc0/0.jpg" alt="Video Thumbnail" class="mb-2 rounded">
+            <h3 class="text-lg font-semibold mb-2 text-white">Video 2: Exploring Design Patterns</h3>
+            <a href="https://www.youtube.com/watch?v=ckNEdxQ0Tc0" target="_blank" class="text-highlight-blue underline">Watch Video</a>
+            <div class="completion-bar mt-2 bg-gray-600 h-1">
+              <div class="bg-highlight-teal h-1" style="width: 0;" onclick="markComplete(this)"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -107,6 +112,8 @@
     </div>
 
   </div>
+
+  <div id="notification" class="fixed bottom-4 right-4 bg-highlight-blue text-white p-4 rounded shadow-lg hidden">You earned 100 points!</div>
 
   <script src="script.js"></script>
 </body>
