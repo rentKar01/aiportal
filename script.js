@@ -92,9 +92,11 @@ function addTodayTask() {
 
 // Function to download tasks as Excel
 function downloadTasksAsExcel() {
-  let csvContent = "data:text/csv;charset=utf-8,Task,Status,Priority\n";
+  let csvContent = "data:text/csv;charset=utf-8,Task,Status,Priority
+";
   todayTasks.forEach(taskObj => {
-    csvContent += `${taskObj.task},${taskObj.status},${taskObj.priority}\n`;
+    csvContent += `${taskObj.task},${taskObj.status},${taskObj.priority}
+";
   });
 
   const encodedUri = encodeURI(csvContent);
