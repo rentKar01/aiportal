@@ -1,113 +1,1366 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rentkar AI Daily Assistant</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    .bg-dark-gray { background-color: #1E1E2C; }
-    .text-muted { color: #A3A3A3; }
-    .highlight-blue { color: #00ADB5; }
-    .highlight-teal { color: #00FFC6; }
-    .status-dot {
-      height: 10px;
-      width: 10px;
-      border-radius: 50%;
-      display: inline-block;
+<!-- saved from url=(0051)https://www.editpad.org/?edit-id=pDtBGZY6pN02d11aed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://www.editpad.org/editpad.png" rel="icon" type="image/x-icon">
+    <meta name="_token" content="hbENZHeX9L4a5IXw5QgiMBz9599uC24TnH5ydbY3">
+        <title>Editpad - Online Notepad &amp; Wordpad (Text Editor) for Notes</title>
+    <meta name="description" content="Online notepad by Editpad is a free text editor (Wordpad) that allows you to write, share, and save notes online while browsing the internet.">
+    
+                        <link rel="canonical" href="https://www.editpad.org/">
+            <link rel="alternate" hreflang="x-default" href="https://www.editpad.org/">
+            <link rel="alternate" hreflang="en" href="https://www.editpad.org/">
+                                                                            <link rel="alternate" hreflang="es" href="https://www.editpad.org/es">
+                                                                <link rel="alternate" hreflang="fr" href="https://www.editpad.org/fr">
+                                                                <link rel="alternate" hreflang="de" href="https://www.editpad.org/de">
+                                                                <link rel="alternate" hreflang="nl" href="https://www.editpad.org/nl">
+                                                                <link rel="alternate" hreflang="ru" href="https://www.editpad.org/ru">
+                                                                <link rel="alternate" hreflang="br" href="https://www.editpad.org/br">
+                                                                <link rel="alternate" hreflang="ja" href="https://www.editpad.org/ja">
+                                                                <link rel="alternate" hreflang="it" href="https://www.editpad.org/it">
+                                                                <link rel="alternate" hreflang="pl" href="https://www.editpad.org/pl">
+                                                                <link rel="alternate" hreflang="id" href="https://www.editpad.org/id">
+                                                                <link rel="alternate" hreflang="ko" href="https://www.editpad.org/ko">
+                                                                <link rel="alternate" hreflang="fi" href="https://www.editpad.org/fi">
+                                                                <link rel="alternate" hreflang="he" href="https://www.editpad.org/he">
+                                                                <link rel="alternate" hreflang="sv" href="https://www.editpad.org/sv">
+                                                                <link rel="alternate" hreflang="tr" href="https://www.editpad.org/tr">
+                                                                <link rel="alternate" hreflang="cs" href="https://www.editpad.org/cs">
+                                                                <link rel="alternate" hreflang="ar" href="https://www.editpad.org/ar">
+                                                                <link rel="alternate" hreflang="ro" href="https://www.editpad.org/ro">
+                                                                <link rel="alternate" hreflang="th" href="https://www.editpad.org/th">
+                                                                <link rel="alternate" hreflang="no" href="https://www.editpad.org/no">
+                                                
+<!-- Google Tag Manager -->
+
+<!-- End Google Tag Manager -->
+
+
+<link rel="stylesheet" href="./index_files/style.css">
+
+<style>
+    .greybox {
+        border-top: 2px solid #a1afb4;
     }
-    .status-dot.green { background-color: #00FFC6; }
-    .status-dot.blue { background-color: #00ADB5; }
-    .status-dot.red { background-color: #FF4C4C; }
-  </style>
-</head>
-<body class="bg-black text-white min-h-screen flex flex-col items-center justify-center">
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-6 max-w-6xl mx-auto w-full">
+    .bps2,
+    .rbs {
+        border-radius: 5px;
+        margin-top: 21px;
+        clear: both;
+        background: #fff;
+        box-shadow: 0 0 6px 3px #f1f1f1;
+    }
 
-    <!-- Morning Focus and Employee Info -->
-    <div class="bg-dark-gray p-6 rounded-lg shadow-lg col-span-1 sm:col-span-2 lg:col-span-3 flex flex-col lg:flex-row justify-between items-center">
-      <div class="w-full lg:w-2/3">
-        <h2 class="text-2xl font-semibold text-highlight-blue mb-4">Morning Focus 🌅</h2>
-        <p class="text-muted text-sm mb-2">"What is one step you’re taking to move Rentkar forward today?"</p>
-        <input type="text" placeholder="Describe your focus..." class="w-full p-3 bg-gray-800 text-white rounded focus:outline-none focus:ring-2 focus:ring-highlight-blue">
-      </div>
-      <div class="w-full lg:w-1/3 mt-4 lg:mt-0 bg-gray-800 p-4 rounded-lg">
-        <div class="flex items-center">
-          <img src="https://via.placeholder.com/50" alt="Employee Avatar" class="rounded-full mr-4">
-          <div>
-            <h3 class="text-lg font-semibold">John Doe</h3>
-            <p class="text-sm text-muted">Skill Points: <span class="highlight-blue">150</span></p>
-            <p class="text-sm text-muted">Salary Increase: <span class="highlight-teal">₹10,000</span></p>
-            <p class="text-sm text-muted">Job: Product Manager</p>
-          </div>
+    .rBtns {
+        padding: 5px 10px;
+        background: #f4f6f7;
+        color: #3c5057;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+        margin: 0 4px;
+        display: inline-block;
+    }
+</style>
+
+    <link rel="stylesheet" href="./index_files/home.css">
+    
+    
+    
+    
+    
+    
+    <style>
+        .ep__laoder__wrapper {
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            background: #ffffffcb;
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            z-index: 9999;
+        }
+
+        .ep__loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: transparent !important;
+        }
+
+        .ep__loader__ani {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            background: white;
+            border-radius: 100%;
+            border: 4px solid #f2f2f2;
+            transform: scale(1.2)
+        }
+
+        /* #f2f2f2 */
+        .ep__loader__ani::before {
+            content: '';
+            display: block;
+            min-width: 21px;
+            min-height: 21px;
+            border: 3px solid #2196f3;
+            border-radius: 100px;
+            border-left-color: #f2f2f2;
+            animation: rotateLoader 1s ease-out infinite;
+            margin-top: -2px;
+            margin-left: -2px;
+            transform: rotate(360deg);
+            transform-origin: center;
+            transition: 0.3s ease
+        }
+
+
+        .ep__loader__ani::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 23px;
+            height: 23px;
+            display: block;
+            background-image: url('/web_assets/frontend/images/green-tick-icon.svg');
+            background-size: cover;
+            margin-top: -5px;
+            margin-left: 5px;
+            transition: 0.3s ease;
+            opacity: 0;
+
+        }
+
+
+        .completed::after {
+            transition: 0.3s ease;
+            opacity: 1;
+        }
+
+        .completed::before {
+            transform: rotate(130deg);
+            transition: 0.3s ease;
+            border: 3px solid #2196f3 !important;
+        }
+
+        .ep__laoder__wrapper.small .ep__loader {
+            top: 14px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .ep__laoder__wrapper.small+.captcha-div {
+            top: 50%;
+        }
+
+        @keyframes rotateLoader {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <style>
+        /* .ep__notes__wrapper {
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                background: #ffffffcb;
+                width: 100%;
+                height: 100%;
+                display: block;
+                position: absolute;
+                z-index: 1000000;
+            } */
+
+        .ep__body {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            background: transparent !important;
+            max-width: 400px;
+            background: #F0F5FE !important;
+            padding: 10px;
+            gap: 3px;
+        }
+
+        .ep__body h3 {
+            font-size: 18px !important;
+            display: flex;
+            align-items: center;
+            gap: 9px;
+        }
+
+
+        .ep__body h3 img {
+            width: 32px;
+        }
+
+
+
+        .ep__body p {
+            font-size: 16px !important;
+            line-height: 130% !important;
+        }
+
+        .ep__body .close__icon {
+            width: 16px;
+            position: absolute;
+            top: 10px;
+            right: 10px
+        }
+
+
+        .close__icon{
+            cursor: pointer;
+        }
+
+        .ep__body h3 {
+            margin: 0px;
+        }
+    </style>
+    
+            <style>
+        .no-www-warning {
+            background-color: #2b4258cf;
+            font-size: 1rem;
+            text-align: center;
+            color: white;
+        }
+    </style>
+    <script src="./index_files/mammoth.browser.min.js" async="" id="mammoth"></script><script src="./index_files/pdf.min.js" async="" id="pdfjs"></script><script src="./index_files/pdf.min.js" async="" id="pdfjs"></script><script async="" type="text/javascript" src="./index_files/tracking.js"></script></head>
+
+<body class="ace__editor__init">
+                
+    <input type="hidden" name="crindex" id="crindex" value="0">
+
+<style>
+    .navsec {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .navsec .logo {
+        display: flex;
+        gap: 5px;
+    }
+
+    .navsec .nav__right {
+        display: flex;
+        gap: 10px;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .toolDiv {
+        display: flex;
+        gap: 12px;
+    }
+
+    .toolDiv a {}
+
+    .content-sec {
+        margin-top: 50px;
+    }
+
+    .rownr {
+        display: none;
+    }
+
+    .dont-break-out {
+        max-height: 100%;
+        width: 100%;
+    }
+
+    .sidebarinfo {
+        display: none;
+    }
+
+    .navbar {
+        display: flex
+    }
+
+    .content-sec {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header .leftbar,
+    .content-sec .left {
+        width: 100% !important;
+    }
+
+    .footer {
+        margin-top: 0px !important;
+    }
+
+    .nav__right__btn {
+        display: flex;
+        gap: 10px;
+        margin-left: 12px;
+        align-items: center;
+    }
+
+    .nav__right__btn a span,
+    .nav__right__btn button {
+        font-size: 16px !important;
+    }
+
+    .nav__right__btn a,
+    .nav__right__btn button {
+        transition: 0.3s ease !important;
+        cursor: pointer !important;
+        align-items: center !important;
+        padding: 0px 10px !important;
+        height: 30px;
+    }
+
+    .nav__right__btn a:hover,
+    .login__btn:hover {
+        box-shadow: -2px 2px 0px #000 !important;
+    }
+
+    .nav__premium {
+        background-color: var(--color-yellow) !important;
+    }
+
+    .navsec .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .navsec .logo a {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .login__btn {
+        background-color: var(--color-purple) !important;
+    }
+
+    .navBtn {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        padding: 4px 10px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        border: 1px solid var(--color-black);
+        box-shadow: var(--box-shadow);
+        font-size: 14px !important;
+    }
+
+    nav a {
+        text-decoration: none !important;
+    }
+
+    .account__btn {
+        background-color: var(--color-green) !important;
+    }
+
+    .search-top {
+        margin-left: 0px !important;
+    }
+
+    .toolDiv2 {
+        margin-left: 15px;
+    }
+
+    #search-icon-image {
+        width: 20px;
+    }
+
+    .header__sidebar {
+        width: 100%;
+        background: #fff;
+        z-index: 100000;
+        border: 1px solid #000;
+        box-shadow: -2px 2px 0px #000;
+        margin-bottom: 5px;
+        position: relative;
+    }
+
+
+    .header__sidebar .nav__right {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .nav__right label {
+        max-width: fit-content !important;
+    }
+
+
+
+    .header__sidebar .nav__right__btn {
+        flex-direction: column-reverse;
+        margin-top: 15px !important;
+    }
+
+    .header__sidebar .nav__right__btn a {
+        justify-content: center !important;
+        width: 100%;
+        text-align: center !important;
+    }
+
+    .header__sidebar .toolDiv2 {
+        margin-left: 0px !important;
+        margin-top: 15px !important;
+    }
+
+    .header__sidebar a {
+        color: #000;
+        text-decoration: none;
+        font-size: 16px !important;
+    }
+
+    .header__sidebar .toolDiv,
+    .header__sidebar .navbar,
+    .header__sidebar .nav__right__btn {
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        margin: auto 0px !important;
+    }
+
+    .header__sidebar .toolDiv,
+    .header__sidebar .nav__right__btn {
+        padding: 30px 20px !important;
+
+    }
+
+    .header__sidebar .toolDiv {
+        border-bottom: 1px solid #000;
+    }
+
+    .header__sidebar {
+        display: none;
+    }
+
+    .menu__icon img {
+        max-width: 28px;
+        max-height: 28px;
+        transition: 0.3s ease;
+        background: #000;
+        transform: translateY(2px);
+        cursor: pointer;
+        display: none;
+    }
+
+    .menu__icon img:hover {
+        transform: scale(1.02)
+    }
+
+    @media only screen and (max-width: 1336px) and (min-width: 1260px) {
+        .nav__right__top {
+            gap: 0px !important
+        }
+
+        .nav__right__btn a img {
+            display: none;
+
+        }
+    }
+
+
+    @media only screen and (max-width: 1260px) {
+        .menu__icon img {
+            display: block;
+        }
+
+        .header__sidebar.active {
+            display: block;
+        }
+
+        .header .navbar {
+            display: none;
+        }
+
+        .nav__bar__premium {
+            display: none;
+        }
+
+        .header__sidebar .nav__premium,
+        .header__sidebar .chat__button {
+            max-width: 300px;
+        }
+
+        .header__sidebar .toolDiv,
+        .header__sidebar .toolDiv2 {
+            margin: auto !important;
+            width: 100%;
+            text-align: center;
+        }
+
+        #app__header--dark {
+            position: absolute;
+            left: 104px;
+        }
+    }
+
+    .sales__banner {
+        background: url('/web_assets/frontend/images/banners/sale-banner.svg');
+        width: 100%;
+        height: 45px;
+        background-size: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #B34200;
+        gap: 4px;
+    }
+
+    .sales__banner span {
+        font-weight: 700;
+    }
+
+    #chat-widget-minimized {
+        display: none !important;
+    }
+
+    #chat-widget-container {
+        margin-bottom: 100px !important;
+        max-height: 614px !important;
+        right: 35px !important;
+    }
+
+
+    @media only screen and (max-width: 768px) {
+        .chat__button {
+            display: none;
+        }
+    }
+    
+    @media only screen and (max-width: 320px) {
+        .nav__right__btn a, .nav__right__btn button {
+            height: 24px;
+            padding: 0px 2px !important;
+            font-size: 12px !important;
+        }
+        
+        .navsec .logo {
+            margin-top: 0;
+        }
+
+        #search-icon-image {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    @media only screen and (max-width: 1336px) and (min-width: 1260px) {
+        .nav__right__top {
+            gap: 0px !important
+        }
+
+        .nav__right__btn a img {
+            display: none;
+
+        }
+    }
+</style>
+    <style>
+        @media only screen and (max-width: 1300px) {
+            .nav__right__btn {
+                margin-left: 3vh !important;
+            }
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+<div class="header" style="font-size: 14px;">
+    <div class="navsec">
+        <span class="logo"><a href="https://www.editpad.org/"><img src="./index_files/logo128.png" loading="lazy" alt="Edit Pad - Free Online Text Editor" width="16" height="16" hspace="2" vspace="0" border="0" align="bottom">Editpad</a><span class="flag-n3" data-title="New Tab" style="cursor: pointer;font-size: 20px;font-weight: 500;" id="newwindow"><a href="https://www.editpad.org/" target="_blank" class="q">+</a></span> </span>
+
+
+        <div class="nav__right nav__right__top">
+            <div class="nav__right__btn">
+                
+                <label for="dark-mode-op" id="app__header--dark" class="" tooltip="Dark Mode" flow="left"><span id="darkmode" onclick="darkmode()" class="app__header--dark--span "><i class="gg-sun"></i></span></label>
+                <label class="search-top" style="margin-bottom: -3px !important" id="search-top" onclick="openSearchBar()" search=""><img id="search-icon-image" loading="lazy" src="./index_files/search-icon.svg" class="search-icon-image" alt="search on editpad"></label>
+                <div id="search-bar-global" onclick="closeSearchBar(this)" class="search_parent">
+
+                    <div class="autocomplete" style="display: flex;flex-direction:column;">
+                        <input type="search" placeholder="Enter Search Term To Find Tool" id="search_query">
+                        
+                    </div>
+                    <span class="close-search" onclick="closeSearchBar(this)">×</span>
+                </div>
+                                    <a href="https://www.editpad.org/?edit-id=pDtBGZY6pN02d11aed#" class="nav__bar__premium navBtn chat__button">
+                        <img src="./index_files/chat-online-icon.svg" alt="Chat Icon" width="21" height="21" loading="lazy">
+                        Chat Online
+                    </a>
+                                
+                <a href="https://www.editpad.org/tool/plans" class="nav__premium nav__bar__premium navBtn eTrack" e-track="header get premium button">
+                    <img src="./index_files/premium-solid-icon.svg" alt="Premium Button Icon" width="21" height="21" loading="lazy">
+                    Get Premium
+                </a>
+                                    <a href="https://www.editpad.org/tool/login" class="navBtn login__btn">Login</a>
+                
+                <div class="menu__icon">
+                    <img src="./index_files/menu-icon.svg" alt="Menu Icon" width="28" height="28" loading="lazy">
+                </div>
+            </div>
+
+            <span class="navbar" id="topnavbar">
+                <div class="toolDiv">
+                    
+                                                                                                <a href="https://www.editpad.org/tool/plagiarism-checker">Plagiarism Checker</a>
+                                                                            <a href="https://www.editpad.org/tool/paraphrasing-tool">Paraphrasing Tool</a>
+                                            
+                    
+
+                </div>
+                <div class="toolDiv toolDiv2">
+                    <a href="https://www.editpad.org/tool/story-generator">Story Generator</a>
+                </div>
+                <div class="toolDiv toolDiv2">
+                    <a href="https://www.editpad.org/tool/text-summarizer">Text Summarizer</a>
+                </div>
+                <div class="toolDiv toolDiv2">
+                    <a href="https://www.editpad.org/tool/ai-essay-writer">AI Essay Writer</a>
+                </div>
+                <div class="toolDiv toolDiv2">
+                    <a href="https://www.editpad.org/tool/extract-text-from-image">Extract Text
+                        From Image</a>
+                </div>
+            </span>
         </div>
-      </div>
     </div>
+</div>
 
-    <!-- Brainstorm Session with AI Search (Bento Grid) -->
-    <div class="bg-dark-gray p-6 rounded-lg shadow-lg col-span-1 sm:col-span-2 lg:col-span-3">
-      <h2 class="text-2xl font-semibold text-highlight-teal mb-4">Brainstorm Session 💡</h2>
-      <p class="text-muted mb-4">"Use this section to brainstorm new ideas for Rentkar and get AI-powered suggestions to enhance productivity."</p>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <div class="p-4 bg-gray-900 rounded">
-          <label class="block mb-2 text-sm font-semibold text-white">New Idea:</label>
-          <input id="brainstorm-input" type="text" placeholder="Your idea..." class="w-full p-3 bg-gray-800 text-white rounded focus:outline-none focus:ring-2 focus:ring-highlight-teal mb-2">
-          <button onclick="submitBrainstorm()" class="bg-highlight-blue hover:bg-highlight-teal text-white py-2 px-4 rounded transition-colors duration-200">Submit</button>
-        </div>
-        <div id="ai-response" class="p-4 bg-gray-900 rounded hidden">
-          <h3 class="text-lg font-semibold mb-2 text-highlight-blue">AI Response:</h3>
-          <p id="ai-answer" class="text-gray-300 mb-4"></p>
-          <button onclick="addBrainstormToTasks()" class="bg-highlight-teal hover:bg-highlight-blue text-white py-2 px-4 rounded transition-colors duration-200">Add to To-Do List</button>
-        </div>
-      </div>
+
+
+<div class="header__sidebar">
+    <div class="nav__right" style="">
+        <div class="nav__right__btn">
+
+            <a href="https://www.editpad.org/tool/plans" class="nav__premium navBtn">
+                <img src="./index_files/premium-solid-icon.svg" alt="Premium Icon" loading="lazy">
+                Get Premium
+            </a>
+                    </div>
+
+        <!-- end search section -->
+        <span class="navbar" id="topnavbar">
+            <div class="toolDiv">
+                
+                                                                                <a href="https://www.editpad.org/tool/plagiarism-checker">Plagiarism Checker</a>
+                                                                <a href="https://www.editpad.org/tool/paraphrasing-tool">Paraphrasing Tool</a>
+                                    
+                
+
+                
+                <a href="https://www.editpad.org/tool/story-generator">Story Generator</a>
+
+                <a href="https://www.editpad.org/tool/text-summarizer">Text Summarizer</a>
+                <a href="https://www.editpad.org/tool/ai-essay-writer">AI Essay Writer</a>
+                <a href="https://www.editpad.org/tool/extract-text-from-image">Extract Text From
+                    Image</a>
+                
+            </div>
+        </span>
     </div>
+</div>
 
-    <!-- Upskill Section with Horizontal Banner -->
-    <div class="bg-dark-gray p-6 rounded-lg shadow-lg col-span-1 sm:col-span-2 lg:col-span-3">
-      <h2 class="text-2xl font-semibold text-highlight-teal mb-4">Upskill 📈</h2>
-      <p class="text-muted mb-4">"Continue your growth with these curated learning videos. Click to track your progress."</p>
-      <div class="flex overflow-x-auto space-x-4">
-        <div class="p-4 bg-gray-800 rounded w-72 min-w-max">
-          <img src="https://img.youtube.com/vi/ckNEdxQ0Tc0/0.jpg" alt="Video Thumbnail" class="mb-2 rounded">
-          <h3 class="text-lg font-semibold mb-2 text-white">Video 1: Learning Performance Marketing</h3>
-          <a href="https://www.youtube.com/watch?v=ckNEdxQ0Tc0" target="_blank" class="text-highlight-blue underline">Watch Video</a>
-          <div class="completion-bar mt-2 bg-gray-600 h-1">
-            <div class="bg-highlight-teal h-1" style="width: 0;" onclick="markComplete(this)"></div>
-          </div>
-        </div>
-        <div class="p-4 bg-gray-800 rounded w-72 min-w-max">
-          <img src="https://img.youtube.com/vi/ckNEdxQ0Tc0/0.jpg" alt="Video Thumbnail" class="mb-2 rounded">
-          <h3 class="text-lg font-semibold mb-2 text-white">Video 2: Exploring Design Patterns</h3>
-          <a href="https://www.youtube.com/watch?v=ckNEdxQ0Tc0" target="_blank" class="text-highlight-blue underline">Watch Video</a>
-          <div class="completion-bar mt-2 bg-gray-600 h-1">
-            <div class="bg-highlight-teal h-1" style="width: 0;" onclick="markComplete(this)"></div>
-          </div>
-        </div>
-      </div>
+
+
+
+    
+    
+        <div class="content-sec" id="content-sec">
+        <div class="left" style="position: relative;">
+            
+            <div id="closeit" class="" style="position: absolute;right: calc(10% - 7px);top: 21px;font-weight: bold;color: #fff;font-size: 18px;z-index: 1002;background: #ef1b1b;width: 25px;height: 25px;text-align: center;line-height: 27px;border-radius: 50%;cursor:pointer;display:none">
+                X </div>
+            <div class="popup-overlay" style="position: absolute; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); z-index: 1000000; display: none;">
+            </div>
+            
+            <div class="content" id="contentSec" style="position: absolute; width: 80%; height: 88%; overflow: hidden auto; top: 5%; left: 50%; max-width: 900px; transform: translateX(-50%); z-index: 1000000 !important; display: none;">
+                <button class="close__wellcome__popup"><img src="./index_files/close-icon.svg" alt="Close Icon" loading="lazy"></button>
+                <div class="headDiv">
+                    <p> Welcome to EditPad.org - your online plain text editor. Click on buttons below or <b>Press Any Key</b> to create new note.</p>
+                </div>
+                <h1>Editpad - Online Notepad &amp; Wordpad for Notes</h1><p>Editpad is an online notepad developed for editing plain text. This wordpad works similar to the online text editor of Microsoft.</p><h2>How to use Text Editor?</h2><p>Open Editpad Wordpad and start creating the notes online. You can also copy-paste to edit text and save it for later use.</p><p>Besides this, our online notepad allows users to upload files from a computer, Google Drive, and One Drive. (under development)</p><p>You can add, delete, and copy-paste text on the online text pad (notebook).</p><h2>Advanced Editor Features of NotePad Online</h2><ul><li><strong>Word Count:&nbsp;</strong>Our online textpad (notebook) allows you to check the total number of words written or pasted. And you can convert <a href="https://www.editpad.org/tool/words-to-pages" target="_blank" rel="noopener">words to pages</a> also.</li><li><strong>Character Count:&nbsp;</strong>You can also check the exact number of characters in your writing by using this feature. It will promptly count characters and spaces and will display the result.<br><img src="./index_files/2.png" alt="Online Notepad"></li><li><strong>Check Plagiarism and Grammar:&nbsp;</strong>You can also <a href="https://www.editpad.org/tool/plagiarism-checker">check plagiarism</a>,&nbsp;<a href="https://www.editpad.org/tool/grammar-checker" target="_blank" rel="noopener">grammar</a>,&nbsp;and <a href="https://www.editpad.org/tool/punctuation-checker">punctuation</a> of edited text in our online editor.&nbsp;</li><li><strong>Paraphrase Text:&nbsp;</strong>If you’re writing plain text in our <a href="https://www.editpad.org/">Online Notepad</a>, you also have the option to <a href="https://www.editpad.org/tool/paraphrasing-tool">paraphrase</a>&nbsp;&amp; <a href="https://www.editpad.org/tool/text-summarizer" target="_blank" rel="noopener">summarize</a> it in the same typing pad.</li><li><strong>Write Essay:</strong> If you're an Essayist then Editpad online notepad is the best choice to save your essays online, also you can use our <a href="https://www.editpad.org/tool/ai-essay-writer">essay writer</a> to write unique and effective essays using artificial intelligence.</li><li><strong>Thesis, Sentence, and Paragraph Writing:</strong> Students and writers can use Editpad's online notepad to write down their research and save it to their browser for use at any time. They can also use our <a href="https://www.editpad.org/tool/thesis-statement-generator">thesis statement generator</a>, <a href="https://www.editpad.org/tool/ai-sentence-generator">AI sentence generator</a>, and <a href="https://www.editpad.org/tool/paragraph-generator">AI paragraph generator</a>, which are trained with advanced AI models for help in writing thesis statements, sentences and paragraphs.</li><li><strong>Writing Stories:</strong> Authors can use our notepad online to save their ideas to remember storylines. They can also use our <a href="https://www.editpad.org/tool/story-generator">AI story generator</a> to write stories of every genre in seconds.</li><li><strong>No Installation:&nbsp;</strong>The best thing about Plain Text Editor is that you don’t need to install it to complete your tasks.</li><li><strong>Converts Rich Text:</strong>&nbsp;Remove text formatting in word, excel and google docs.<strong>&nbsp;</strong>It&nbsp;converts rich text to plain text. For formatted text, use our <a href="https://www.editpad.org/tool/online-rich-text-editor" target="_blank" rel="noopener">rich text editor</a>.</li><li><strong>Best Alternative:</strong>&nbsp;The online alternative of Notepad++, Google Docs, and Microsoft Notepad</li><li><strong>Download and Save:</strong>&nbsp;Editpad provides an option to download and save the edited text directly into the smart device just with a single click.<br><img src="./index_files/11.png" alt="Text Editor"></li><li><p dir="ltr"><strong id="docs-internal-guid-8cad284b-7fff-056c-33e4-ea1d77110c2a">Full Screen: </strong>Full screen feature expands text editor area to full screen. It can be reverted to normal by pressing the “Esc button”</p></li><li><p dir="ltr"><strong id="docs-internal-guid-0737d633-7fff-4427-4352-e711f10fd3cb">Share file: </strong>Directly share your notes with others by using our “share note” option. You can create and share unlimited files.</p></li><li><p dir="ltr"><strong id="docs-internal-guid-5c3d2af6-7fff-85b2-7e5d-42eefbf0d6ca">Password Protection: </strong>Secure your shared notes using passwords. Only people who know the password can view your plain text.</p></li><li><p dir="ltr"><strong>Upload File:</strong>&nbsp;You can directly upload files from your local device and edit text online. The following file formats are supported.</p><ol><li><p dir="ltr">.DOC / .DOCX (Microsoft Word documents)</p></li><li><p dir="ltr">.TXT&nbsp;(plain text files)</p></li><li><p dir="ltr">.PDF</p></li></ol></li><li><p dir="ltr"><strong>Mobile Application:</strong> Android and iOS mobile apps are available on the Play Store and Apple Store.&nbsp;</p></li><li><p dir="ltr"><strong>Convert to Handwriting</strong>: Convert your written <a href="https://www.editpad.org/tool/text-to-handwriting" target="_blank" rel="noopener">text to handwriting</a> text.&nbsp;</p></li><li><p dir="ltr"><strong>Generate Conclusion /&nbsp;Abstract:</strong> To generate&nbsp;a conclusion or abstract of your written text,&nbsp;<a href="https://www.editpad.org/tool/abstract-generator" target="_blank" rel="noopener">abstract generator</a>, and <a href="https://www.editpad.org/tool/conclusion-generator" target="_blank" rel="noopener">conclusion generator</a> are developed. <a href="https://www.editpad.org/tool/alphabetizer" target="_blank" rel="noopener">Alphabetizer</a> is also available to make listings in sequence.</p></li></ul><h2 dir="ltr"><strong id="docs-internal-guid-b59b90de-7fff-79f7-97d1-12aca849582a">Uses of Editpad Online:</strong></h2><p dir="ltr">The most common uses of our online NotePad are:</p><ol dir="ltr"><li>It helps to write and edit the text in no time.</li><li>Students and other users can quickly create online notes without installing text editing software.</li><li>Allows you to check the originality of written content</li><li>Bloggers, writers, and webmasters can use our paraphraser to rewrite the content and avoid plagiarism</li><li>It helps developers to work on the same file simultaneously working on different projects</li></ol><h2>Adding Strikethrough Text in the Notepad?</h2><p>Our online notepad does not have built-in strikethrough text formatting options. You have to use the <a href="https://www.editpad.org/tool/strikethrough-text">Strikethrough Text</a> tool to make your text strikethrough and then copy it.</p><h2>How to quickly repeat text multiple times in a notepad?</h2><p>By using a <a href="https://www.editpad.org/tool/text-repeater">Text Repeater</a> tool, you can easily repeat the same text multiple times and copy it. You can then paste the copied text using the paste command (“CTRL + V” or “CMD + V”) in the notepad.</p><h2>Do we save your notes?</h2><p>No, we do not save any of your private data. All notes are saved on your local device using cookies.</p><h2>New Features and tools:</h2><p>You can now use <a href="https://www.editpad.org/tool/invisible-character" target="_blank" rel="noopener">Invisible Character</a>,&nbsp;<a href="https://www.editpad.org/tool/case-converter">Convert Case</a>,&nbsp;<a href="https://www.editpad.org/tool/upside-down-text-converter">Upside Down Text</a>, <a href="https://www.editpad.org/tool/reverse-text-generator">Reverse Text</a>, <a href="https://www.editpad.org/tool/weird-text-generator">Weird Text</a>, and <a href="https://www.editpad.org/tool/small-text-generator">Small Text</a> at Editpad.</p><h2>Supported Languages:</h2><p><a href="https://www.editpad.org/es">ES</a>, <a href="https://www.editpad.org/fr">FR</a>, <a href="https://www.editpad.org/nl">NL</a>, <a href="https://www.editpad.org/de">DE</a>, <a href="https://www.editpad.org/ru">RU</a>, <a href="https://www.editpad.org/br">BR</a>, <a href="https://www.editpad.org/ja">JA</a>, <a href="https://www.editpad.org/it">IT</a>, <a href="https://www.editpad.org/pl">PL</a>, <a href="https://www.editpad.org/id">ID</a>, <a href="https://www.editpad.org/ko">KO</a>, <a href="https://www.editpad.org/fi">FI</a>, <a href="https://www.editpad.org/he">HE</a>, <a href="https://www.editpad.org/sv">SV</a>, <a href="https://www.editpad.org/tr">TR</a>, <a href="https://www.editpad.org/cs">CS</a>, <a href="https://www.editpad.org/ar">AR</a>, <a href="https://www.editpad.org/ro">RO</a>, <a href="https://www.editpad.org/th">TH</a>, <a href="https://www.editpad.org/no">NO</a></p>
+                <div style="display:flex;justify-content:center;margin-bottom:40px">
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=com.freequick.editpad&amp;hl=en_US&amp;gl=US&amp;pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" style="display: block;text-align:center;margin-bottom: 100px;margin:10px">
+                        <img class="lazy" loading="lazy" width="200px" alt="Get it on Google Play" data-src="https://www.editpad.org/web_assets/frontend/images/play.svg" src="./index_files/play.svg">
+                    </a>
+                    <a target="_blank" href="https://apps.apple.com/us/app/editpad-text-editor/id1611329458" style="display: block;text-align:center;margin-bottom: 100px;margin:10px">
+                        <img class="lazy" loading="lazy" width="200px" alt="Get it on Google Play" data-src="https://www.editpad.org/web_assets/frontend/images/app.svg" src="./index_files/app.svg">
+                    </a>
+                    <a target="_blank" href="https://apps.apple.com/us/app/editpad-text-editor/id1611329458" style="display: block;text-align:center;margin-bottom: 100px;margin:10px">
+                        <img class="lazy" loading="lazy" width="200px" alt="Get it on Google Play" data-src="https://www.editpad.org/web_assets/frontend/images/macOS.svg" src="./index_files/macOS.svg">
+                    </a>
+                    <a target="_blank" href="https://apps.microsoft.com/store/detail/editpad-windows/9PNSZ7KH64CM?hl=en-us&amp;gl=US" style="display: block;text-align:center;margin-bottom: 100px;margin:10px">
+                        <img class="lazy" loading="lazy" width="200px" alt="Get it on Google Windows" data-src="https://www.editpad.org/web_assets/frontend/images/Windows.svg" src="./index_files/Windows.svg">
+                    </a>
+                </div>
+                <div class="content__blogs">
+                    <h2>Recent Blogs</h2>
+                    <div class="content__blogs__wrapper">
+                        <div>
+                            <span>Sep 20, 2024</span>
+                            <a href="https://www.editpad.org/tool/blog/narrative-paragraphs-elements-format-writing-and-examples" target="_blank">Narrative Paragraphs: Elements, Format, Writing, and Examples</a>
+                        </div>
+                        <div>
+                            <span>Sep 05, 2024</span>
+                            <a href="https://www.editpad.org/tool/blog/expository-paragraph-writing-with-examples" target="_blank">Expository Paragraph Writing (with Examples)</a>
+                        </div>
+                        <div>
+                            <span>Aug 26, 2024</span>
+                            <a href="https://www.editpad.org/tool/blog/write-a-topic-sentence" target="_blank">How to Write a Topic Sentence? (Examples &amp; Tips)</a>
+                        </div>
+                        <div>
+                            <span>July 24, 2024</span>
+                            <a href="https://www.editpad.org/tool/blog/how-to-write-a-paragraph" target="_blank">How to Write a Paragraph?</a>
+                        </div>
+                        <div>
+                            <span>Jun 20, 2024</span>
+                            <a href="https://www.editpad.org/tool/blog/chatgpt-4o-vs-meta-ai-who-generates-the-best-stories" target="_blank">ChatGPT-4o vs. Meta AI: Who Generates the Best Stories?</a>
+                        </div>
+                        <div>
+                            <span>Jun 03, 2024</span>
+                            <a href="https://www.editpad.org/tool/blog/difference-between-chatgpt-3-5-vs-chatgpt-4-vs-chatgpt-4o" target="_blank">Difference Between ChatGPT-3.5 vs ChatGPT-4 vs ChatGPT-4o</a>
+                        </div>
+                        <div>
+                            <span>May 16, 2023</span>
+                            <a href="https://www.editpad.org/tool/blog/difference-between-summarizing-and-paraphrasing" target="_blank">Difference Between Summarizing and Paraphrasing</a>
+                        </div>
+                        <div>
+                            <span>Apr 16, 2023</span>
+                            <a href="https://www.editpad.org/tool/blog/editpad-and-chatgpt" target="_blank">Mastering The Art Of Writing With Editpad &amp; ChatGPT</a>
+                        </div>
+                        <div>
+                            <span>Jan 31, 2023</span>
+                            <a href="https://www.editpad.org/tool/blog/what-is-paraphrasing" target="_blank">What is Paraphrasing?</a>
+                        </div>
+                        <div>
+                            <span>Dec 19, 2022</span>
+                            <a href="https://www.editpad.org/tool/blog/what-is-plagiarism" target="_blank">What Is Plagiarism?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="editsec" style="height: 100%;min-height: 500px" display:block="">
+                <div name="textform" id="textform">
+                    <input type="hidden" name="_token" value="hbENZHeX9L4a5IXw5QgiMBz9599uC24TnH5ydbY3">                    <!-- calc(100% - 72px) -->
+                    <div class="editpad_text" style="display:flex;height: calc(100% - 49px);">
+
+                        <div class="side__pannel">
+                            <button class="home__lang__div">
+                                <img src="./index_files/languages-icon.svg" alt="Language Icon" loading="lazy">
+                            </button>
+                            <button id="edtpd_feedback_moddel_trigger_btn_mobile">
+                                <img src="./index_files/feedback-icon.svg" alt="Feedback Icon" loading="lazy">
+                            </button>
+                            
+                            <button id="uplaod__file__btn">
+                                <label data-text="Upload File" for="txtFile">
+                                    <img src="./index_files/upload-icon.svg" width="24" height="24" alt="Upload Icon" loading="lazy">
+                                    <input type="file" hidden="" id="txtFile">
+                                    <span>Upload File</span>
+                                </label>
+                            </button>
+                            <button class="full__screen full__screen__mobile" id="fullscreen_mobile">
+                                <img class="normalScreen" src="./index_files/full-screen-reverse-icon.svg" alt="Full Screen Reverse Icon" loading="lazy">
+                                <img class="fullScreen" src="./index_files/full-screen-icon.svg" alt="Full Screen Icon" loading="lazy">
+                                <p>Full Screen</p>
+                            </button>
+
+                            
+                            <button data-text="Download" id="downloadFile">
+                                <img src="./index_files/download-icon.svg" alt="Download Icon" loading="lazy">
+                                <span>Download</span>
+                            </button>
+                            
+                        </div>
+                        <div class="savingLoader">
+                            <span></span> Saving Notes...
+                        </div>
+                        <div class="notepad__bottom__bar">
+                            <div>
+                                <div class="home__lang__div">
+                                    
+                                    <img src="./index_files/language-icon.svg" alt="Language Icon" loading="lazy">
+                                    <span>
+                                        
+                                        Language
+                                        <img src="./index_files/caret-top-icon.svg" alt="Caret Icon" loading="lazy">
+                                    </span>
+                                </div>
+                                <div class="home__lang__options">
+                                                                            <a href="https://www.editpad.org/en">English</a>
+                                                                            <a href="https://www.editpad.org/es">Spanish</a>
+                                                                            <a href="https://www.editpad.org/fr">Français</a>
+                                                                            <a href="https://www.editpad.org/de">Deutsche</a>
+                                                                            <a href="https://www.editpad.org/nl">Nederlands</a>
+                                                                            <a href="https://www.editpad.org/ru">русский</a>
+                                                                            <a href="https://www.editpad.org/br">Brazil</a>
+                                                                            <a href="https://www.editpad.org/ja">日本人</a>
+                                                                            <a href="https://www.editpad.org/it">Italiano</a>
+                                                                            <a href="https://www.editpad.org/pl">Polskie</a>
+                                                                            <a href="https://www.editpad.org/id">Indonesian</a>
+                                                                            <a href="https://www.editpad.org/ko">한국어</a>
+                                                                            <a href="https://www.editpad.org/fi">Suomalainen</a>
+                                                                            <a href="https://www.editpad.org/he">עברית</a>
+                                                                            <a href="https://www.editpad.org/sv">Svenska</a>
+                                                                            <a href="https://www.editpad.org/tr">Türk</a>
+                                                                            <a href="https://www.editpad.org/cs">čeština</a>
+                                                                            <a href="https://www.editpad.org/ar">العربية</a>
+                                                                            <a href="https://www.editpad.org/ro">Română</a>
+                                                                            <a href="https://www.editpad.org/th">ไทย</a>
+                                                                            <a href="https://www.editpad.org/no">norsk</a>
+                                                                    </div>
+                                <div>
+                                    <a class="blogs__link" href="https://www.editpad.org/tool/blogs">Our Blogs</a>
+                                </div>
+                            </div>
+                            <div class="word__counter">
+                                <div class="full__screen full__screen__desktop" id="fullscreen">
+                                    <img class="normalScreen" src="./index_files/full-screen-reverse-icon.svg" alt="Full Screen Reverse Icon" loading="lazy">
+                                    <img class="fullScreen" src="./index_files/full-screen-icon.svg" alt="Full Screen Icon" loading="lazy">
+                                    <p>Full Screen</p>
+                                </div>
+                                <div class="feedback feedback__desktop" id="edtpd_feedback_moddel_trigger_btn">
+                                    Give Feedback
+                                </div>
+                                <div>
+                                    <span id="ttwords">355</span>
+                                    words
+                                </div>
+                                <div>
+                                    <span id="ttcharac">4011</span>
+                                    Character
+                                </div>
+                                <div>
+                                    <span id="ttsentences">26</span>
+                                    Sentence
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="ql-title-wrap">
+                            <input class="ql-title" id="doc__title" type="text" placeholder="Untitled Document" maxlength="50">
+                        </div>
+                        
+                        <div class="toggle__formating">
+                            Formatting
+                            <label class="switch">
+                                <input type="checkbox" name="toggleFormating">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <textarea class="rownr" id="rownr" rows="30" cols="3" value="1" style="max-height:100%" readonly=""></textarea>
+
+                        <textarea class="dont-break-out" cols="100" rows="30" name="text" style="max-height:100%;display:none;" id="editorTextarea__text" onclick="selectionchanged(this)" oninput="input_changed(this)" onscroll="scroll_changed(this)" onkeydown="return insertTab(event,this);" onkeyup="saveDoc(this,this.value);keyup(this,event)" onkeypress="return insertTab(event,this);" onfocus="onfocusTab()"></textarea>
+                        <div id="docs__sidebar">
+                            <div class="sidebar__newdoc">
+                                <button data-text="New File" class="createNewFile">
+                                    <img src="./index_files/new-file-icon.svg" alt="" loading="lazy">
+                                    <span>New Note</span>
+                                </button>
+                                <span class="editor__sidebar__toggle">
+                                    <img src="./index_files/sidebar-icon.svg" alt="Sidebar Open Icon" loading="lazy">
+                                </span>
+                            </div>
+                            <div class="recent__docs__bar">
+                                <p>SAVED NOTES</p>
+                                <div class="recent__docs__list"><div data-id="pDtBGZY6pN02d11aed" class="active"><p>&lt; !DOCTYPE html &gt;&lt; htm</p>
+        <img class="delete__note__sidebar" src="./index_files/delete-icon.svg" alt="">
+        </div></div>
+                            </div>
+                        </div>
+                        <div id="lineNumber"></div>
+                        <div id="editorTextarea"><textarea id="textarea__editor"></textarea></div>
+                        <section class="ep__laoder__wrapper d-none" style="background: #0000003d">
+    <div class="ep__loader">
+        <span style="background: transparent;border-color: transparent;" class="ep__loader__ani"></span>
+        <span class="ep__loader__text">Loading Notes...</span>
     </div>
+</section>
+                        <div id="content">
+                        </div>
+                    </div>
 
-    <!-- Full-Width To-Do List with Collaborator Email, Priority, and Status -->
-    <div class="bg-dark-gray p-6 rounded-lg shadow-lg col-span-1 sm:col-span-2 lg:col-span-3">
-      <h2 class="text-2xl font-semibold text-highlight-blue mb-4">Today's To-Do List 📋</h2>
-      <ul id="today-task-list" class="space-y-3 mb-4">
-        <!-- Initial sample tasks will be added here -->
-      </ul>
-      <div class="flex items-center mb-4">
-        <input type="text" id="new-today-task" placeholder="Add a new task..." class="flex-1 p-3 bg-gray-800 text-white rounded-l focus:outline-none focus:ring-2 focus:ring-highlight-blue">
-        <input type="email" id="collaborator-email" placeholder="Invite collaborator (optional)" class="flex-1 p-3 bg-gray-800 text-white rounded-l focus:outline-none focus:ring-2 focus:ring-highlight-teal ml-2">
-        <select id="priority-select" class="p-3 bg-gray-800 text-white rounded focus:outline-none focus:ring-2 focus:ring-highlight-teal ml-2">
-          <option value="Low">Low</option>
-          <option value="Medium">Medium</option>
-          <option value="High">High</option>
-        </select>
-        <button onclick="addTodayTask()" class="bg-highlight-teal hover:bg-highlight-blue text-white py-2 px-4 rounded-r transition-colors duration-200">Add Task</button>
-      </div>
-      <button onclick="downloadTasksAsExcel()" class="bg-highlight-blue hover:bg-highlight-teal text-white py-2 px-4 rounded w-full transition-colors duration-200">Download To-Do List as Excel</button>
+                    
+                </div>
+            </div>
+        </div>
+        <form style="display:none" name="plagForm" method="POST" action="https://www.editpad.org/tool/plagiarism-checker" target="_blank">
+            <input type="hidden" name="_token" value="hbENZHeX9L4a5IXw5QgiMBz9599uC24TnH5ydbY3">            <textarea name="content"></textarea>
+        </form>
+        <form style="display:none" name="paraphraseForm" method="POST" action="https://www.editpad.org/tool/paraphrasing-tool" target="_blank">
+            <input type="hidden" name="_token" value="hbENZHeX9L4a5IXw5QgiMBz9599uC24TnH5ydbY3">            <textarea name="content"></textarea>
+        </form>
     </div>
+    <section class="popup__wrapper">
+        <div class="popup__overlay"></div>
+        <div class="download__popup">
+            <div class="popup__header">
+                <h3>Share Document</h3>
+                <button class="close__shareDoc">
+                    <img src="./index_files/close-icon.svg" alt="Close Icon" loading="lazy">
+                </button>
+            </div>
+            <div>
+                <div onclick="copyNotesLink()">
+                    <div>
+                        <img src="./index_files/download-link-icon.svg" width="20" alt="" loading="lazy">
+                    </div>
+                    <span>Copy Link</span>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://editpad.org/?share-id=">
+                        <img src="./index_files/facebook-icon.svg" alt="Facebook Icon" loading="lazy">
+                    </a>
+                    <span>Facebook</span>
+                </div>
+                <div>
+                    <a href="https://twitter.com/intent/tweet?text=Check%20These%20Notes%20on%20editpad.org%20Link:%20&amp;url=https://www.editpad.org/?share-id=" target="_blank">
+                        <img src="./index_files/twitter-icon.svg" alt="Twitter Icon" loading="lazy">
+                    </a>
+                    <span>Twitter</span>
+                </div>
+                <div>
+                    <a onclick="shareNotesViaMail()">
+                        <img src="./index_files/mail-icon.svg" alt="Mail Icon" loading="lazy">
+                    </a>
+                    <span>Gmail</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  </div>
+    <section class="formated__popup__wrapper">
+        <div class="formated__popup__overlay"></div>
+        <div class="formatted__popup">
+            <div>
+                <h3>Are you sure you want to disable the formatting?</h3>
+                <p>You will lost formating of your content.</p>
+            </div>
+            <div class="formatted__popup__imgs">
+                <img src="./index_files/unformatted-view.png" alt="Unformated Icon" loading="lazy">
+                <img src="./index_files/formatted-view.png" alt="Formated Icon" loading="lazy">
+            </div>
+            <div class="formatted__popup__btn">
+                <button class="continue__formatting">Not Now</button>
+                <button class="switch__formatting__off">Continue</button>
+            </div>
+        </div>
+    </section>
+    <section class="delete__popup__wrapper">
+        <div class="delete__popup__overlay"></div>
+        <div class="delete__popup">
+            <div>
+                <h3>Delete this document?</h3>
+                <p>You will not be able to recover it</p>
+            </div>
+            <div class="delete__info">
+                <img src="./index_files/unformate-doc.svg" alt="Unformate Icon" loading="lazy">
+                <p>Untitled Document</p>
+            </div>
+            <div class="delete__btns">
+                <button class="cancel__delete">Cancel</button>
+                <button id="delete__note__button">Yes, Delete it</button>
+            </div>
+            <button id="close__delete__popup">
+                <img src="./index_files/close-icon.svg" alt="Close Icon" loading="lazy">
+            </button>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
-</body>
-</html>
+
+
+    <section class="ep__notes__wrapper d-none">
+    <div class="ep__body">
+        <h3><img src="./index_files/limit-exceed-icon.svg" alt=""> <span>Content Size Limit Reached</span></h3>
+        <p>Your content size has be exceed from max limit. Your note is not going to be store any more more than this
+            size. please create new note or don't increase its length</p>
+        <img class="close__icon" src="./index_files/cross-icon.svg" alt="">
+    </div>
+</section>
+    <section class="user__notes__wrapper">
+     <div class="user__notes">
+         <div>
+             <p class="mini__title first__mini__title">Start Editing you document here</p>
+             <button class="close__docs__popup"><img src="./index_files/close-icon.svg" alt="" loading="lazy"></button>
+         </div>
+         <div class="btnSec">
+             <button class="btn2 btn-primary createNewFile">
+                 <img src="./index_files/new-file-round-icon.svg" alt="" loading="lazy">
+                 <span>
+                     Create New Note
+                 </span>
+             </button>
+             <button class="btn2 btn-primary" id="uplText">
+                 <label for="txtFile" style="cursor: pointer">
+                     <img src="./index_files/upload-file-icon.svg" alt="" loading="lazy">
+                     <span>
+                         Upload File
+                     </span>
+                 </label>
+                 <input type="file" hidden="" id="txtFile">
+             </button>
+         </div>
+
+            <p class="mini__title mini__title_2">Recent documents</p>
+            <div class="recent__filter__bar">
+                <div>
+                    <img src="./index_files/recent-search-icon.svg" alt="" loading="lazy">
+                    <input type="text" placeholder="Search for documents..." id="filter__notes">
+                </div>
+                
+            </div>
+            <div class="recent__documents">
+            </div>
+        </div>
+
+    </section>    <div class="fetching__notes__popup d-none">
+        <p class="ep__loader">
+            <span style="" class="ep__loader__ani"></span>
+            <span class="ep__loader__text">Fetching your notes from Cloud Storage to Browser Storage...</span>
+        </p>
+    </div>
+    
+    
+    <div id="edtpd_feedback_modal_wrapper" class="edtpd-feedback-modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="edtpd-feedback-close">
+            <img src="./index_files/cross-icon.svg" alt="">
+        </span>
+        <p class="feedback__heading feedback__step__1">What do you think about this tool?</p>
+        <div class="feedback-form feedback__step__1">
+            <p class="responseMsg"></p>
+            <div class="feedback__emoji">
+                <span>
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="11.5" stroke="#707070"></circle>
+                        <circle cx="8.00033" cy="9.33333" r="1.33333" fill="#707070"></circle>
+                        <circle cx="16.0003" cy="9.33333" r="1.33333" fill="#707070"></circle>
+                        <path d="M8.66699 16.6673C8.66699 16.6673 10.6986 15.334 12.0003 15.334C13.3021 15.334 15.3337 16.6673 15.3337 16.6673" stroke="#707070" stroke-linecap="round"></path>
+                    </svg>
+                </span>
+                <span>
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="11.5" stroke="#707070"></circle>
+                        <circle cx="8.00033" cy="9.33333" r="1.33333" fill="#707070"></circle>
+                        <circle cx="16.0003" cy="9.33333" r="1.33333" fill="#707070"></circle>
+                        <path d="M8 17.334L11.9986 16.0011C13.3242 15.5592 14.7123 15.334 16.1096 15.334H16.6667" stroke="#707070" stroke-linecap="round"></path>
+                    </svg>
+                </span>
+                <span>
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="11.5" stroke="#707070"></circle>
+                        <circle cx="8.00033" cy="9.33333" r="1.33333" fill="#707070"></circle>
+                        <circle cx="16.0003" cy="9.33333" r="1.33333" fill="#707070"></circle>
+                        <path d="M8 16L13.4286 16L16 16" stroke="#707070" stroke-linecap="round"></path>
+                    </svg>
+                </span>
+                <span>
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="11.5" stroke="#707070"></circle>
+                        <circle cx="8.00033" cy="9.33333" r="1.33333" fill="#707070"></circle>
+                        <circle cx="16.0003" cy="9.33333" r="1.33333" fill="#707070"></circle>
+                        <path d="M8.66699 15.334C8.66699 15.334 10.6986 16.334 12.0003 16.334C13.3021 16.334 15.3337 15.334 15.3337 15.334" stroke="#707070" stroke-linecap="round"></path>
+                    </svg>
+                </span>
+
+                <span>
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="11.5" stroke="#707070"></circle>
+                        <circle cx="8.00033" cy="9.33333" r="1.33333" fill="#707070"></circle>
+                        <circle cx="16.0003" cy="9.33333" r="1.33333" fill="#707070"></circle>
+                        <path d="M12.0003 18C8.00033 18 6.66699 13.3333 6.66699 13.3333H17.3337C17.3337 13.3333 16.0003 18 12.0003 18Z" stroke="#707070" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </span>
+            </div>
+            <div class="feedback__form__inputs feedback__step__2 d-none">
+                <span id="feedback__error"></span>
+                <input type="email" id="edtpd_feedback_email_input" placeholder="Enter your email (optional)">
+                <span style="color: #AAAAAA;font-size: 13px; display: block; margin: 5px; margin-top: 0px; margin-bottom: 10px;">Your email is safe with us. It is just for contact you back if issue resolve or to ask more about your feedback!</span>
+                <input type="hidden" id="edtpd_feedback_tool_id" value="0">
+                <textarea id="edtpd_feedback_suggestion_input" placeholder="Write your Feedback..."></textarea>
+                <button onclick="editpad_feedback()" id="feedback_send_btn" class="">Submit Feedback</button>
+            </div>
+        </div>
+        <div class="feedback__thanks feedback__step__3 d-none">
+            <img src="./index_files/feedback-thanks.svg" alt="">
+            <p class="feedback__thanks_heading">Thank You</p>
+            <p class="feedback_thanks_msg">Your submission has been received. <br>We will be in touch and contact you soon!</p>
+            <button class="">Back to site</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Start of LiveChat (www.livechat.com) code -->
+<script type="text/javascript">
+    var base_url = "https://www.editpad.org/";
+    var tool_name = "editpad - en";
+    var curent_url = "https://www.editpad.org";
+    var emd_is_user_premium = +"0";
+    var toolLang = "en";
+    var tool_id = +"1";
+</script>
+<script type="text/javascript" src="./index_files/jquery.js"></script>
+<script type="text/javascript" src="./index_files/script.js"></script>
+<script type="text/javascript" src="./index_files/search-autocomplete-min.js">
+</script>
+
+
+    <script>
+        function delayedLoad() {
+            setTimeout(function() {
+                var noscriptElement = document.createElement('noscript');
+                noscriptElement.innerHTML =
+                    '<a href="https://www.livechat.com/chat-with/16690533/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>';
+                document.body.appendChild(noscriptElement);
+
+                window.__lc = window.__lc || {};
+                window.__lc.license = 16690533;;
+                (function(n, t, c) {
+                    function i(n) {
+                        return e._h ? e._h.apply(null, n) : e._q.push(n)
+                    }
+                    var e = {
+                        _q: [],
+                        _h: null,
+                        _v: "2.0",
+                        on: function() {
+                            i(["on", c.call(arguments)])
+                        },
+                        once: function() {
+                            i(["once", c.call(arguments)])
+                        },
+                        off: function() {
+                            i(["off", c.call(arguments)])
+                        },
+                        get: function() {
+                            if (!e._h) throw new Error(
+                                "[LiveChatWidget] You can't use getters before load.");
+                            return i(["get", c.call(arguments)])
+                        },
+                        call: function() {
+                            i(["call", c.call(arguments)])
+                        },
+                        init: function() {
+                            var n = t.createElement("script");
+                            n.async = !0, n.type = "text/javascript", n.src =
+                                "https://cdn.livechatinc.com/tracking.js", t.head.appendChild(n)
+                        }
+                    };
+                    !n.__lc.asyncInit && e.init(), n.LiveChatWidget = n.LiveChatWidget || e
+                }(window, document, [].slice))
+
+                $(".chat__button").on('click', function() {
+                    var iframe = $("#chat-widget-minimized")[0];
+                    var iframeDocument = iframe?.contentDocument || iframe?.contentWindow?.document;
+                    var chatButton = (iframeDocument.children)[0].querySelector('button');
+                    $(chatButton).click();
+                });
+
+            }, 3000); // 3000 milliseconds = 3 seconds
+        }
+
+        // Call the delayed loading function
+        delayedLoad();
+    </script>
+    
+
+<!-- End of LiveChat code -->
+
+
+<!-- Google Tag Manager (noscript) -->
+
+<!-- End Google Tag Manager (noscript) -->
+    <script>
+        // var loadNoteFromDb = +""
+        var userID = +"0";
+        const notesUrl = {
+            "getUserNotes": "https://www.editpad.org/getUserNotes",
+            "updateSingleNoteUrl": "https://www.editpad.org/updateSingleNoteUrl",
+            "deleteNote": "https://www.editpad.org/deleteNote",
+            "getSharedNote": "https://www.editpad.org/getSharedNote",
+            "storeLocalStorageNotes": "https://www.editpad.org/storeLocalStorageNotes",
+            'getHomePlans': "https://www.editpad.org/homePlans",
+            'getUserNotesSizeInfo': "https://www.editpad.org/getUserNotesSize",
+            'quoteReachedCount' : "https://www.editpad.org/quoteReachedCount"
+        };
+        const TITLES_VERSION = 'v3.1';
+        const FEEDBACK_SHOWN_VERSION = 'v1.3'
+        const isThisToolPremium = "0";
+        const isUserLoggedIn = "";
+        const userCookie = "";
+        var notesTitlesUrl = "https://www.editpad.org/getNotesTitles";
+        var updateNoteTitleLink = "https://www.editpad.org/updateNoteTitle";
+    </script>
+    <script src="./index_files/detect-incognito.js"></script>
+    <script src="./index_files/home.js"></script>
+    <script src="./index_files/ace-editor.js"></script>
+    <script src="./index_files/prose-mirror-editor.js"></script>
+    <script src="./index_files/home-general.js"></script>
+    <script src="./index_files/txtFromFile.js"></script>
+    <script>
+        $(".menu__icon").on('click', function() {
+            $(this).toggleClass('active');
+            $(".header__sidebar").toggleClass('active');
+        });
+
+
+        $(".logout__button").on('click', function() {
+            if (localStorage.getItem('isLSApplied') == null) {
+                localStorage.removeItem('notesTitleList');
+            }
+        });
+    </script>
+    
+<script async="" src="./index_files/js"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-1X1S77N82E");
+</script>
+
+
+
+<script type="text/javascript">
+    var allToolsSearchSeeds = [["home","Edit Pad - Online Text Editor &amp; Wordpad (Notepad) for Notes", "en"],["home","Edit Pad - Online Text Editor &amp; Wordpad (Notepad) for Notes - es", "es"],["home","Editpad - fr", "fr"],["home","Editpad - DE", "de"],["home","Editpad - NL", "nl"],["home","Editpad - RU", "ru"],["home","Editpad - PT", "br"],["home","Editpad - JA", "ja"],["home","Editpad- IT", "it"],["home","Editpad - PL", "pl"],["home","Editpad - ID", "id"],["home","Editpad - KO", "ko"],["home","Editpad - FI", "fi"],["home","Editpad - HB", "he"],["home","Editpad - SD", "sv"],["home","Editpad - TR", "tr"],["home","Editpad - CZ", "cs"],["home","Editpad - AR", "ar"],["home","Editpad - RO", "ro"],["home","Editpad - Th", "th"],["home","Editpad - NO", "no"],["plagiarism-checker","Plagiarism Checker", "en"],["paraphrasing-tool","Paraphrasing Tool", "en"],["reverse-text-generator","Reverse Text - Backwards Text Generator", "en"],["small-text-generator","Small Text Generator - Small Caps / Tiny Text", "en"],["upside-down-text-converter","Upside Down Text Generator", "en"],["words-to-pages","Words to Pages", "en"],["case-converter","Case Converter", "en"],["online-rich-text-editor","Online rich-text editor", "en"],["grammar-checker","Grammar Checker", "en"],["article-rewriter","Article Rewriter", "en"],["paraphrasing-tool","Parafrasear online", "es"],["paraphrasing-tool","Tekst Herschrijven", "nl"],["paraphrasing-tool","Text umschreiben", "de"],["paraphrasing-tool","Parafrase online", "id"],["paraphrasing-tool","Parafrasear Texto", "br"],["paraphrasing-tool","Paragraf değiştirici", "tr"],["paraphrasing-tool","Reformuler un texte", "fr"],["plagiarism-checker","Detector de Plagio", "es"],["plagiarism-checker","Plagiatsprüfung kostenlos", "de"],["invisible-character","Invisible Character", "en"],["plagiarism-checker","kontrola plagiátorství", "cs"],["plagiarism-checker","Plagiatkontroll Gratis", "sv"],["plagiarism-checker","Antyplagiat online", "pl"],["plagiarism-checker","Logiciel anti plagiat gratuit", "fr"],["plagiarism-checker","Cek plagiarisme", "id"],["plagiarism-checker","Plagiaat checker", "nl"],["readability-checker","Readability Checker", "en"],["diff-checker","Diff Checker", "en"],["text-similarity-checker","Text Similarity Checker", "en"],["extract-text-from-image","Extract Text From Image", "en"],["plagiarism-checker","plagiat detector", "ro"],["plagiarism-checker","антиплагиат онлайн", "ru"],["plagiarism-checker","Detector de Plagio Online", "br"],["plagiarism-checker","โปรแกรมตรวจการคัดลอกงาน ฟรี", "th"],["text-summarizer","Text Summarizer", "en"],["paraphrasing-tool","синонимайзер текста        ", "ru"],["paraphrasing-tool","parafraseren strumento ", "it"],["paraphrasing-tool","Skriv om text", "sv"],["paraphrasing-tool","Parafrázovací nástroj", "cs"],["paraphrasing-tool","Công cụ diễn giải", "vi"],["paraphrasing-tool","Omskrivning af værktøj", "da"],["paraphrasing-tool","parafrazowanie tekstu online", "pl"],["paraphrasing-tool","Omskrivingsverktøy", "no"],["paraphrasing-tool","言い換えツール", "ja"],["emoji-translator","Emoji Translator", "en"],["weird-text-generator","Weird Text Generator", "en"],["stylish-text-generator","Stylish Text Generator", "en"],["glitchy-text-generator","Glitch Text Generator", "en"],["cursive-font-generator","Cursive Font Generator", "en"],["gothic-text-generator","Gothic Text Generator", "en"],["discord-font-generator","Discord Font Generator", "en"],["aesthetic-text-generator","Aesthetic Text Generator", "en"],["cool-text","Cool Text Generator", "en"],["wingdings-translator","Wingdings Translator", "en"],["old-english-translator","Old English Translator", "en"],["article-rewriter","Reescribir Textos", "es"],["article-rewriter","Artikelherschrijver", "nl"],["article-rewriter","Artikel Rewriter ", "de"],["article-rewriter","Penulis Penulis Artikel", "id"],["article-rewriter","Artigo Rewriter", "br"],["article-rewriter","Makale Yeniden Yazan", "tr"],["article-rewriter","Réécrivain d'article", "fr"],["article-rewriter","Редактор статей", "ru"],["online-html-editor","Online HTML Editor", "en"],["cursed-font","Cursed Text Generator", "en"],["bubble-text","Bubble Text Generator", "en"],["strikethrough-text","Strikethrough Text Generator", "en"],["zalgo-text","Zalgo Text Generator", "en"],["big-text","Big Text Generator - Generate Large Text ", "en"],["old-norse-translator","Old Norse Translator", "en"],["fancy-font","Fancy Font Generator", "en"],["cool-font","Cool Font Generator", "en"],["fortnite-font","Fortnite Font Generator", "en"],["text-summarizer","Resumidor De Textos", "es"],["text-summarizer","Text Zusammenfassen", "de"],["text-summarizer","Riassunto Online Attrezzo", "it"],["text-summarizer","Resumo de texto", "pt"],["text-summarizer","Peringkas teks", "id"],["fancy-text-generator","Fancy Text Generator", "en"],["word-counter","Word Counter", "en"],["character-counter","Character Counter", "en"],["punctuation-checker","Punctuation checker", "en"],["text-repeater","Text Repeater", "en"],["vaporwave-text-generator","Vaporwave Text Generator", "en"],["citation-generator","Citation Generator", "en"],["title-generator","Title Generator", "en"],["text-to-handwriting","Text To Handwriting", "en"],["caractere-invisible","Caractère invisible", "fr"],["caracter-invisible","Carácter Invisible", "es"],["teks-kosong","teks kosong", "id"],["imagen-a-texto","Convertir Imagen a Texto", "es"],["imagem-em-texto","converter imagem em texto", "br"],["gambar-ke-teks","gambar ke teks", "id"],["caractere-invisivel","caractere invisível", "br"],["text-summarizer","metin özetleyici", "tr"],["correttore-grammaticale","Correttore Grammaticale", "it"],["corretor-gramatical","corretor gramatical", "br"],["plagiarism-checker","Intihal programi", "tr"],["text-summarizer","Text summarizer - RO", "ro"],["corrector-castellano","Corrector castellano", "es"],["alphabetizer","Alphabetizer", "en"],["conclusion-generator","Conclusion Generator", "en"],["abstract-generator","Abstract Generator", "en"],["generador-texto-inverso","Texto inverso - Generador de texto al revés", "es"],["generateur-texte-inverse","Texte inversé - Générateur de texte inversé", "fr"],["umgekehrter-textgenerator","Umgekehrter Text - Rückwärtstextgenerator", "de"],["generator-teks-terbalik","Teks Terbalik - Generator Teks Mundur", "id"],["generador-texto-pequeno","Generador de texto pequeño: versalitas/texto diminuto", "es"],["petit-generateur-texte","Petit générateur de texte - Petites majuscules / Petit texte", "fr"],["kleiner-textgenerator","Generator für kleinen Text - Kapitälchen / Winziger Text", "de"],["generator-teks-kecil","Generator Teks Kecil - Huruf Kecil / Teks Kecil", "id"],["convertidor-de-texto-al-reves","Generador de texto al revés", "es"],["convertisseur-de-texte-lenvers","Générateur de texte à l'envers", "fr"],["umgedrehter-textkonverter","Auf den Kopf gestellter Textgenerator", "de"],["konverter-teks-terbalik","Generator Teks Terbalik", "id"],["convertidor-de-casos","Convertidor de Casos", "es"],["convertisseur-de-cas","Convertisseur de cas", "fr"],["fall-konverter","Fall konverter", "de"],["konverter-kasus","Konverter Kasus", "id"],["comprobador-de-legibilidad","Comprobador de legibilidad", "es"],["verificateur-de-lisibilite","Vérificateur de lisibilité", "fr"],["lesbarkeitsprufer","Lesbarkeitsprüfung", "de"],["pemeriksa-keterbacaan","Pemeriksa Keterbacaan", "id"],["comprobador-de-diferencias","Comprobador de diferencias", "es"],["verificateur-de-differentiel","Vérifier les différences", "fr"],["diff-prufer","Diff Prüfer", "de"],["pemeriksa-perbedaan","Pemeriksa Perbedaan", "id"],["extraire-le-texte-de-limage","Extraire le texte de l'image", "fr"],["text-aus-bild-extrahieren","Text aus Bild extrahieren", "de"],["generador-de-texto-extrano","Generador de texto extraño", "es"],["generateur-de-texte-etrange","Générateur de texte étrange", "fr"],["seltsamer-textgenerator","Seltsamer Textgenerator", "de"],["pembuat-teks-aneh","Pembuat Teks Aneh", "id"],["generador-de-texto-con-estilo","Generador de texto con estilo", "es"],["generateur-de-texte-elegant","Générateur de texte élégant", "fr"],["stilvoller-textgenerator","Stilvoller Textgenerator", "de"],["pembuat-teks-bergaya","Pembuat Teks Bergaya", "id"],["generador-de-texto-de-falla","Generador de texto de falla", "es"],["generateur-de-texte-glitch","Générateur de texte glitch", "fr"],["panne-textgenerator","Panne Textgenerator", "de"],["pembuat-teks-glitch","Pembuat Teks Glitch", "id"],["generador-de-fuentes-cursivas","Generador de fuentes cursivas", "es"],["generateur-de-polices-cursives","Générateur de polices cursives", "fr"],["schreibschrift-generator","Schreibschrift Generator", "de"],["generator-huruf-kursif","Generator Huruf Kursif", "id"],["generador-de-texto-gotico","Generador de texto gótico", "es"],["generateur-de-texte-gothique","Générateur de texte gothique", "fr"],["generator-fur-gotischen-text","Generator für gotischen Text", "de"],["pembuat-teks-gotik","Pembuat Teks Gotik", "id"],["generador-fuentes-discordia","Generador de fuentes de discordia", "es"],["generateur-polices-discord","Générateur de polices Discord", "fr"],["discord-schrift-generator","Discord Schrift generator", "de"],["pembuat-font-perselisihan","Pembuat Font Perselisihan", "id"],["sammanfattande-verktyg","Text Sammanfattning", "sv"],["generador-texto-estetico","Generador de texto estético", "es"],["perumus-teks","Perumus Teks", "ms"],["list-randomizer","List Randomizer", "en"],["generateur-de-texte-esthetique","Générateur de texte esthétique", "fr"],["asthetischer-textgenerator","Ästhetischer Textgenerator", "de"],["generator-teks-estetika","Generator Teks Estetika", "id"],["genial-generador-de-texto","Genial generador de texto", "es"],["generateur-de-texte-sympa","Générateur de texte sympa", "fr"],["generator-teks-keren","Generator Teks Keren", "id"],["generador-de-texto-zalgo","Generador de texto Zalgo", "es"],["generateur-de-texte-zalgo","Générateur de texte Zalgo", "fr"],["zalgo-text-generator","Zalgo Text Generator", "id"],["generador-de-texto-elegante","Generador de texto elegante", "es"],["generateur-de-texte-fantaisie","Générateur de texte fantaisie", "fr"],["pembuat-teks-mewah","Pembuat Teks Mewah", "id"],["repetidor-de-texto","Repetidor de texto", "es"],["sentence-counter","Sentence Counter", "en"],["podsumowanie-tekstu","Podsumowanie Tekstu", "pl"],["speech-to-text","Speech to text", "en"],["generador-de-conclusiones","Generador de conclusiones", "es"],["generateur-de-conclusion","Générateur de conclusion", "fr"],["fazit-generator","Fazit-Generator", "de"],["check-mark-symbol","Check Mark Symbol", "en"],["unsichtbarer-charakter","Unsichtbarer Charakter", "de"],["bionic-reading","Bionic Reading Tool", "en"],["fake-address-generator","Fake Address Generator", "en"],["jpg-to-word","JPG To Word", "en"],["random-choice-generator","Random Choice Generator", "en"],["thesis-statement-generator","Thesis Statement Generator", "en"],["ai-content-detector","AI Content Detector", "en"],["podcast-script-generator","Podcast Script Generator", "en"],["poem-generator","Poem Generator", "en"],["story-generator","Story Generator", "en"],["slogan-generator","Slogan Generator", "en"],["business-idea-generator","Business Idea Generator", "en"],["cover-letter-generator","Cover Letter Generator", "en"],["blurb-generator","Blurb Generator", "en"],["blog-outline-generator","Blog Outline Generator", "en"],["blog-idea-generator","Blog Idea Generator", "en"],["ai-essay-writer","Essay Writer", "en"],["creador-de-ensayos","", "es"],["email-writer","AI Email Writer", "en"],["binary-translator","Binary Translator", "en"],["gerador-de-redacao","Gerador de Redação", "br"],["aufsatz-schreiber","aufsatz schreiber", "de"],["paragraph-generator","Paragraph Generator", "en"],["book-title-generator","Book Title generator", "en"],["research-title-generator","Research Title Generator", "en"],["business-name-generator","Business Name Generator", "en"],["ai-answer-generator","AI Answer Generator", "en"],["faq-generator","FAQ Generator", "en"],["active-passive-voice-converter","Active Passive Voice Converter", "en"],["sentence-expander","Sentence Expander", "en"],["remove-whitespace","White Space Remover", "en"],["remove-line-breaks","Remove Line Breaks", "en"],["gerador-de-poemas","Gerador de Poemas", "br"],["creador-de-poema","Creador de Poema", "es"],["generateur-de-poeme","Generateur de Poeme", "fr"],["detector-de-ia","Detector de ia", "es"],["product-description-generator","Product Description Generator", "en"],["meta-description-generator","Meta Description Generator", "en"],["acronym-generator","Acronym Generator", "en"],["ai-sentence-generator","AI Sentence Generator", "en"],["review-generator","Review Generator", "en"],["contador-de-palavras","contador de palavras", "br"],["humanize-ai-text","Humanize AI Text", "en"],["generatore-di-storie","generatore di storie", "it"],["humanizar-texto-ia","Humanizar texto ia", "br"],["generatore-di-poesie","Generatore di poesie", "it"],["humanizador-de-texto","Humanizar Texto IA", "es"],["ai-translator","AI Translator", "en"],["excel-formula-generator","Excel Formula Generator", "en"],["identificador-de-ia","Identificador de IA", "br"],["ai-prompt-generator","AI Prompt Generator", "en"],["sentence-rewriter","Sentence Rewriter", "en"],["qr-code-generator","QR Code Generator", "en"],["qr-code-scanner","QR Code Scanner", "en"],["paragraph-rewriter","Paragraph Rewriter", "en"],];
+    var otherLangSameTool = [];;
+    autocomplete(document.getElementById("search_query"), allToolsSearchSeeds, toolLang, otherLangSameTool);
+    $("#background-login,#close_login_popup,.modal-popup-close").on('click', function(event) {
+        $(".alert-error-model").hide();
+        $(".alert-error-model-word").hide();
+    });
+    $(".ad-popup-bg, .ad-popup-close, .alert_box_awdws #continue").on('click', function(event) {
+        $("#alert_box_awdws").hide();
+        $("#alert_box_awdws").removeClass('show');
+    });
+    $(document).keydown(function(event) {
+        if ($("#search-bar-global").css('display') == 'block') {
+            switch (event.keyCode) {
+                case 37:
+                    if ($("#search_queryautocomplete-list").find('.bg-gry').length <= 0) {
+                        $("#search_queryautocomplete-list").find('a:eq(0)').addClass('bg-gry');
+                        $("#crindex").val(0);
+                    } else {
+                        $("#search_queryautocomplete-list").find('a').removeClass('bg-gry');
+                        var crindex = +$("#crindex").val() - 1;
+                        crindex = (crindex <= 0) ? 0 : crindex;
+                        $("#search_queryautocomplete-list").find('a:eq(' + crindex + ')').addClass('bg-gry');
+                        $("#crindex").val(crindex)
+                    }
+                    break;
+                case 38:
+                    if ($("#search_queryautocomplete-list").find('.bg-gry').length <= 0) {
+                        $("#search_queryautocomplete-list").find('a:eq(0)').addClass('bg-gry');
+                        $("#crindex").val(0);
+                    } else {
+                        $("#search_queryautocomplete-list").find('a').removeClass('bg-gry');
+                        var crindex = +$("#crindex").val() - 4;
+                        crindex = (crindex <= 0) ? 0 : crindex;
+                        $("#search_queryautocomplete-list").find('a:eq(' + crindex + ')').addClass('bg-gry');
+                        $("#crindex").val(crindex)
+                    }
+                    // console.log("Up key is pressed.");
+                    break;
+                case 39:
+                    if ($("#search_queryautocomplete-list").find('.bg-gry').length <= 0) {
+                        $("#search_queryautocomplete-list").find('a:eq(0)').addClass('bg-gry');
+                        $("#crindex").val(0);
+                    } else {
+                        $("#search_queryautocomplete-list").find('a').removeClass('bg-gry');
+                        var crindex = +$("#crindex").val() + 1;
+                        $("#search_queryautocomplete-list").find('a:eq(' + crindex + ')').addClass('bg-gry');
+                        $("#crindex").val(crindex)
+                    }
+                    // console.log("Right key is pressed.");
+                    break;
+                case 40:
+                    if ($("#search_queryautocomplete-list").find('.bg-gry').length <= 0) {
+                        $("#search_queryautocomplete-list").find('a:eq(0)').addClass('bg-gry');
+                        $("#crindex").val(0);
+                    } else {
+                        $("#search_queryautocomplete-list").find('a').removeClass('bg-gry');
+                        var crindex = +$("#crindex").val() + 4;
+                        $("#search_queryautocomplete-list").find('a:eq(' + crindex + ')').addClass('bg-gry');
+                        $("#crindex").val(crindex)
+                    }
+                    // console.log("Down key is pressed.");
+                    break;
+                case 13:
+                    if ($("#search_query").val() != '') {
+                        if ($("a.bg-gry").attr('href')) {
+                            window.location.href = $("a.bg-gry").attr('href');
+                        } else {
+                            window.location.href = $("#search_queryautocomplete-list a:first-child").attr(
+                                'href')
+                        }
+                    }
+                    break;
+                case 27:
+                    if ($("#search_query").val().trim() == '') {
+                        document.querySelector("#search-bar-global").style.display = "none";
+                        document.getElementById("search_query").value = "";
+                        break;
+                    }
+            }
+        }
+    });
+
+        var default_text =
+        "Welcome to EditPad.org - your online plain text editor. Enter or paste your text here. To download and save it, click on the button below.";
+    var doWarn = 1;
+
+
+    </script>
+    
+
+    <script src="./index_files/etrack.js"></script>
+<script defer="" src="./index_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8de74613d8685f6c&quot;,&quot;version&quot;:&quot;2024.10.4&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;token&quot;:&quot;0ccede229512406a980474670d2d32f5&quot;,&quot;b&quot;:1}" crossorigin="anonymous"></script>
+
+
+
+<noscript><a href="https://www.livechat.com/chat-with/16690533/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript></body></html>
